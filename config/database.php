@@ -93,7 +93,7 @@ return [
             'host' => env('DB_HOST', 'localhost'),
             'port' => env('DB_PORT', '5432'),
             'database' => env('DB_DATABASE', 'forge'),
-            'username' => en('MYSQL_USER', env('DB_USERNAME', 'forge')),
+            'username' => env('MYSQL_USER', env('DB_USERNAME', 'forge')),
             'password' => env('MYSQL_PASSWORD', env('DB_PASSWORD', '')),
             'charset' => 'utf8',
             'prefix' => '',
