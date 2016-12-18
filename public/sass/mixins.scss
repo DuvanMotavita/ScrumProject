@@ -1,0 +1,8 @@
+$bgc: black;
+@mixin dropdown_content{
+    display: block;
+    background-color: $bgc;
+    @if lightness($bgc) < 50% {
+        color: white ;
+    }
+}

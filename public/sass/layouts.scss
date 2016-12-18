@@ -1,0 +1,221 @@
+/*Estilos del cuerpo del dashboard**/
+body{
+    /*Estilo global del cuerpo*/
+    list-style: none;
+
+    /*Estilo globar de las imagenes*/
+    .img{
+        border-radius: 100px;
+        min-width: 10px;
+        max-width:30px;
+    }
+    .ico{
+        min-width: 10px;
+        max-width:30px;
+    }
+    /*Estilo de fondo del menu de perfil*/
+    .hidden-xs{
+        color: $b;
+    }
+    /*Estilo de texto de la palabra Scrum en el navbar*/
+    .navbar-brand{
+        color: $b !important;
+    }
+    /*Estilos de padding del brand*/
+    #brand{
+        padding-top: 8px;
+    }
+    /*Estilo y colores del navbar*/
+    .navbar{
+        
+        background: rgba(156, 56, 44, 0.8) !important;
+        color: rgba(255, 255, 255, 0.9);
+    }
+    /*Estilos de la primera seccion del home*/
+    #section1{
+        /*Estilo para evitar que el nav quede encima del titulo del cuerpo*/
+        margin-top: 70px;
+        /*Estilo del titulo de la primera seccion del home*/
+        .Title{
+           text-align: center !important;
+           color: rgba(0,0,0,.85);
+           border-bottom: 1px solid #ddddd8;
+           padding-bottom: 8px;
+        }
+        /*Estilo de los cuadros de proyectos*/
+        .Frame{
+            text-align: center;
+            background: #226784; 
+            color:rgba(255,255,255,1);;
+            min-height: 200px !important;
+            max-height: 300px !important;
+            min-width: 200px;
+            max-width: 300px;
+            display: block !important;  
+            border-radius: 15px;
+            .boximage{
+                padding-top: 20px;
+                margin-bottom: 15px;
+               .image{
+                    min-width: 50px;
+                    max-width: 100px;
+                 }
+            }
+
+        }
+        /*Estilo de la caja de los cuadros*/
+        .Box{
+               margin-left: 250px;
+               margin-top: 50px;
+               margin-bottom: 100px; 
+        }
+        /*Estilo de los iconos de los cuadros*/
+        #app{
+            text-align: center !important; 
+        }
+        /*Estilos al realizar hover*/
+        .Box:hover{
+            box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
+        }
+    }
+    /*Estilos de los input y footer*/
+    input[type=file] { 
+        width: 1px; 
+        visibility: hidden;
+    }
+    footer{
+        bottom: 0;
+    }
+    /*Estilos del perfil y del dialog del perfil*/
+    .perfil{
+        padding-top: .25rem;
+        font-size: 1.25rem;
+        line-height: inherit;
+
+    }
+    .perfil_dlg{
+        padding-top: .25rem;
+        font-size: 1.25rem;
+        line-height: inherit;
+    }
+    /*Codigo para el tamaño del dialog del perfil*/
+    #dlg_perfil{
+        min-width: 250px;
+        max-width: 300px;
+    }
+    /* Dropdown Button */
+    .dropbtn {
+        color: $b;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+    /* Posicion del contenido el dialog de perfil */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* Estilos del contenido al realizar el hover */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+
+    /* Estilo de los textos tipo link del dialog */
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    /* estilo con mixin para los colores del dropdown menu*/
+    .dropdown-content a:hover {
+        @include dropdown_content;
+    }
+
+    /* Mostrar el dialog al realizar hover */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /* Cambiando el fondo al realizar hover en el boton */
+    .dropdown:hover .dropbtn {
+        opacity: 0.8;
+    }
+    /*Estilos del icono de carpeta*/
+    #min-icon{
+        margin-top: 15px;
+    }
+    /*Estilos del boton darkness*/
+    .btn-darkness{
+       background-color: #240C0C;
+    }
+    /*Estilos de la carpeta y su dialog de opciones*/
+    #li-mar{
+        height: 20px;
+    }
+    /*Estilos del icono y el dialog*/
+    #li-project{
+        min-width: 300px;
+        max-width: 400px;
+        padding: 10px 10px 10px 10px;
+    }
+    /*Estilos del id user y de la  clase span al relizar hover con el mouse*/
+    #user{
+        height: 2   0px;
+    }
+    .span1{
+        color: black ;
+        &:hover{
+            color: $b;
+        }
+    }
+    /*Estilos de las opciones del dialog del icono de la carpeta*/
+    #options{
+        padding-bottom: 20px;
+        height: 20px;
+        margin-left: 900px;
+        padding-left: 50px;
+    }
+    /*Estilo adicional del navegador*/
+    #navpadding{
+        padding-left: 50px;
+    }
+    /*Estilos para el responsive del sistema, utilizando media query*/
+    @media screen and (max-width: 499px) and (min-width: 400px) {
+        .Box{
+               margin-left: 50px !important;
+               margin-top: 50px;
+               margin-bottom: 100px; 
+        }
+    }
+    @media screen and (max-width: 399px) and (min-width: 1px) {
+        .Box{
+               margin-left: 20px !important;
+               margin-top: 50px;
+               margin-bottom: 100px;
+                
+        }
+    }
+    @media screen and (max-width: 1800px) and (min-width: 500px) {
+        .Box{
+               margin-left: 250px !important;
+               margin-top: 50px;
+               margin-bottom: 100px; 
+        }
+    }
+    @media screen and (max-width: 550px) and (min-width: 500px) {
+        .Box{
+               margin-left: 200px !important;
+               margin-top: 50px;
+               margin-bottom: 100px; 
+        }
+    }
+}
