@@ -1,0 +1,96 @@
+.wrapper{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+    video
+    {
+        position: fixed;
+        min-width: 100%;
+        min-height: 100%;
+        
+        top:50%;
+        left: 50%;
+        
+        transform: translateX(-50%) translateY(-50%);
+        z-index: -1;
+    }
+    &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+            opacity: .6; 
+    }
+    #Scrumico{
+        margin-left: 50px;
+        a{
+            font-size: 30px !important;
+        }
+    }
+    .card{
+        margin-top: 50px !important;
+        margin-left: 800px;
+        min-width: 600px;
+        max-width: 1000px;
+        .form-header{
+            background-color: rgba(156, 56, 44, 0.9)!important;
+            background: rgba(156, 56, 44, 0.9) !important;     
+            color: white !important;
+            text-align: center !important;
+            height: 70px !important; 
+            margin-bottom: 40px !important; 
+            padding-top: 20px; 
+        }
+
+    }
+    nav{
+        
+        background: rgba(156, 56, 44, 0.8) !important;
+        color: rgba(255, 255, 255, 0.9);
+    }
+    #Button{
+       background: rgba(156, 56, 44, 0.9) !important;
+    }
+    .ico{
+       min-width: 10px ;
+       max-width: 40px ;   
+    }
+    @media screen and (max-width: 499px) and (min-width: 400px) {
+     .card{
+         margin-top: 150px;
+         margin-left: 10px !important;
+         min-width: 350px;
+         max-width: 450px;
+        }
+    }
+    @media screen and (max-width: 399px) and (min-width: 1px) {
+     .card{
+         margin-top: 150px;
+         margin-left: 10px !important;
+         min-width: 250px;
+         max-width: 350px;
+        }
+    }
+    @media screen and (max-width: 1800px) and (min-width: 500px) {
+     .card{
+        margin-top: 150px;
+        margin-left: 0px !important;
+         min-width: 500px;
+         max-width: 800px;
+        }
+    }
+    @media screen and (max-width: 550px) and (min-width: 500px) {
+        .card{
+             margin-top: 150px;
+             margin-left: 0px !important;
+             min-width: 300px;
+             max-width: 600px;
+        }
+    }
+}
+
+   
+   

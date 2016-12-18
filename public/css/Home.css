@@ -1,0 +1,172 @@
+@charset "UTF-8";
+/*Importando archivos scss para el dise├▒o del dashboard*/
+/*Estilos del cuerpo del dashboard**/
+body {
+  /*Estilo global del cuerpo*/
+  list-style: none;
+  /*Estilo globar de las imagenes*/
+  /*Estilo de fondo del menu de perfil*/
+  /*Estilo de texto de la palabra Scrum en el navbar*/
+  /*Estilos de padding del brand*/
+  /*Estilo y colores del navbar*/
+  /*Estilos de la primera seccion del home*/
+  /*Estilos de los input y footer*/
+  /*Estilos del perfil y del dialog del perfil*/
+  /*Codigo para el tama├▒o del dialog del perfil*/
+  /* Dropdown Button */
+  /* Posicion del contenido el dialog de perfil */
+  /* Estilos del contenido al realizar el hover */
+  /* Estilo de los textos tipo link del dialog */
+  /* estilo con mixin para los colores del dropdown menu*/
+  /* Mostrar el dialog al realizar hover */
+  /* Cambiando el fondo al realizar hover en el boton */
+  /*Estilos del icono de carpeta*/
+  /*Estilos del boton darkness*/
+  /*Estilos de la carpeta y su dialog de opciones*/
+  /*Estilos del icono y el dialog*/
+  /*Estilos del id user y de la  clase span al relizar hover con el mouse*/
+  /*Estilos de las opciones del dialog del icono de la carpeta*/
+  /*Estilo adicional del navegador*/
+  /*Estilos para el responsive del sistema, utilizando media query*/ }
+  body .img {
+    border-radius: 100px;
+    min-width: 10px;
+    max-width: 30px; }
+  body .ico {
+    min-width: 10px;
+    max-width: 30px; }
+  body .hidden-xs {
+    color: white; }
+  body .navbar-brand {
+    color: white !important; }
+  body #brand {
+    padding-top: 8px; }
+  body .navbar {
+    background: rgba(156, 56, 44, 0.8) !important;
+    color: rgba(255, 255, 255, 0.9); }
+  body #section1 {
+    /*Estilo para evitar que el nav quede encima del titulo del cuerpo*/
+    margin-top: 70px;
+    /*Estilo del titulo de la primera seccion del home*/
+    /*Estilo de los cuadros de proyectos*/
+    /*Estilo de la caja de los cuadros*/
+    /*Estilo de los iconos de los cuadros*/
+    /*Estilos al realizar hover*/ }
+    body #section1 .Title {
+      text-align: center !important;
+      color: rgba(0, 0, 0, 0.85);
+      border-bottom: 1px solid #ddddd8;
+      padding-bottom: 8px; }
+    body #section1 .Frame {
+      text-align: center;
+      background: #226784;
+      color: white;
+      min-height: 200px !important;
+      max-height: 300px !important;
+      min-width: 200px;
+      max-width: 300px;
+      display: block !important;
+      border-radius: 15px; }
+      body #section1 .Frame .boximage {
+        padding-top: 20px;
+        margin-bottom: 15px; }
+        body #section1 .Frame .boximage .image {
+          min-width: 50px;
+          max-width: 100px; }
+    body #section1 .Box {
+      margin-left: 250px;
+      margin-top: 50px;
+      margin-bottom: 100px; }
+    body #section1 #app {
+      text-align: center !important; }
+    body #section1 .Box:hover {
+      box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12); }
+  body input[type=file] {
+    width: 1px;
+    visibility: hidden; }
+  body footer {
+    bottom: 0; }
+  body .perfil {
+    padding-top: .25rem;
+    font-size: 1.25rem;
+    line-height: inherit; }
+  body .perfil_dlg {
+    padding-top: .25rem;
+    font-size: 1.25rem;
+    line-height: inherit; }
+  body #dlg_perfil {
+    min-width: 250px;
+    max-width: 300px; }
+  body .dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer; }
+  body .dropdown {
+    position: relative;
+    display: inline-block; }
+  body .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); }
+  body .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block; }
+  body .dropdown-content a:hover {
+    display: block;
+    background-color: black;
+    color: white; }
+  body .dropdown:hover .dropdown-content {
+    display: block; }
+  body .dropdown:hover .dropbtn {
+    opacity: 0.8; }
+  body #min-icon {
+    margin-top: 15px; }
+  body .btn-darkness {
+    background-color: #240C0C; }
+  body #li-mar {
+    height: 20px; }
+  body #li-project {
+    min-width: 300px;
+    max-width: 400px;
+    padding: 10px 10px 10px 10px; }
+  body #user {
+    height: 2   0px; }
+  body .span1 {
+    color: black; }
+    body .span1:hover {
+      color: white; }
+  body #options {
+    padding-bottom: 20px;
+    height: 20px;
+    margin-left: 900px;
+    padding-left: 50px; }
+  body #navpadding {
+    padding-left: 50px; }
+  @media screen and (max-width: 499px) and (min-width: 400px) {
+    body .Box {
+      margin-left: 50px !important;
+      margin-top: 50px;
+      margin-bottom: 100px; } }
+  @media screen and (max-width: 399px) and (min-width: 1px) {
+    body .Box {
+      margin-left: 20px !important;
+      margin-top: 50px;
+      margin-bottom: 100px; } }
+  @media screen and (max-width: 1800px) and (min-width: 500px) {
+    body .Box {
+      margin-left: 250px !important;
+      margin-top: 50px;
+      margin-bottom: 100px; } }
+  @media screen and (max-width: 550px) and (min-width: 500px) {
+    body .Box {
+      margin-left: 200px !important;
+      margin-top: 50px;
+      margin-bottom: 100px; } }
+
+/*# sourceMappingURL=Home.css.map */
